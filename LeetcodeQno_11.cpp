@@ -38,7 +38,7 @@ int main()
                 num=num/10;
             }
             cout<<"The number is : "<<sum;
-    */
+    
     // 4. Power of 2
     int num, org, rem, sum = 0, i = 1;
     cout << "Enter a number : ";
@@ -60,6 +60,41 @@ int main()
         sum = sum / 10;
     }
       cout << org << " is power of 2.";
+
+        // 5. Square root
+        int num,i;
+        cout<<"Enter a number : ";
+        cin>>num;
+        for(i=1;i<num;i++){
+            if(i*i>num){
+               cout<<"The square root is : "<<i-1;
+               break;
+            }
+        }
+*/    
+        // 6. Palindrome number
+        int num,rem,sum=0,rev;
+        cout<<"Enter a number : ";
+        cin>>num;
+        rev=num;
+        while(num>0){
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+        }
+        cout<<"The reverse is : "<<sum<<"\n";
+        if(rev==sum){
+            cout<<rev<<" is palindrome.";
+        }else{
+            cout<<rev<<" is not palindrome.";
+        }
+
+
+
+
+
+
+
 
     return 0;
 }
