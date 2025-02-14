@@ -58,6 +58,13 @@ void moves(int a,int b){
     count=count+min(8-a,b-1);
     cout<<"Total moves are : "<<count<<endl;
 }
+void nimsGame(int num){
+    if(num%4!=0){
+        cout<<"You win.\n";
+    }else{
+        cout<<"Opponent win.\n";
+    }
+}
 
 int main()
 {
@@ -73,7 +80,13 @@ int main()
     // 4. Check rectangle or not
     // rectangle(7,6,6,7);
      // 5. Moves of bishop
-     moves(3,4);
+     // moves(3,4);
+     // 6. Nim's game
+     int num;
+     cout<<"Enter the number : \n";
+     cin>>num;
+     nimsGame(num);
+
 
     return 0;
 }
