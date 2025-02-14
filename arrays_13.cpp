@@ -18,6 +18,7 @@ int main(){
     }
   }
   cout<<"\nThe minimum element is : "<<min<<endl;
+  // 2. Maximum element of an array
   int max=arr[0];
   for(int i=0;i<5;i++){
     if(arr[i]>max){
@@ -27,7 +28,6 @@ int main(){
   cout<<"The maximum element is : "<<max<<endl;
 
 
-
-
+  
     return 0;
 }
